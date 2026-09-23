@@ -1,0 +1,52 @@
+# Local environments and build products
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.cache/
+
+# Data, model caches, experiment outputs and private setup records
+data/
+runs/
+logs/
+setup_checks/
+hf-cache/
+wheelhouse/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.joblib
+*.pkl
+*.npz
+*.npy
+*.pt
+*.pth
+*.safetensors
+
+# Credentials and local/editor state
+.env
+.env.*
+!.env.example
+.ssh/
+*.pem
+*.key
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Manuscript and review material are maintained separately
+paper/
+overleaf/
+figures/
+*.pdf
+*.docx
+*.tex
+*.bib

@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "protocol": "synthetic_pipeline_smoke_v2",
+  "smoke_only": true,
+  "device": "cpu",
+  "split_seeds": [
+    42
+  ],
+  "primary_split": 42,
+  "model_seeds": [
+    0
+  ],
+  "representations": [
+    "mir",
+    "mert",
+    "fusion"
+  ],
+  "heads": [
+    "ridge",
+    "mlp"
+  ],
+  "layers": [
+    4
+  ],
+  "members": 3,
+  "large_members": 10,
+  "projection_dim": 32,
+  "ablations": true,
+  "targets": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "budgets": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "betas": [
+    0,
+    0.5,
+    1,
+    2
+  ],
+  "ridge_alphas": [
+    0.1,
+    1,
+    10
+  ],
+  "mlp_alphas": [
+    0.001,
+    0.1,
+    10
+  ],
+  "mert_revision": "12af15fef9d0ac838c3f475bfbbf26d2060dd4f5",
+  "threads": 1,
+  "training": {
+    "max_iter": 3000,
+    "max_fun": 20000,
+    "tol": 0.000001,
+    "hidden_units": 8
+  },
+  "data": {
+    "download": false,
+    "expected_clips": 1744,
+    "artist_aliases": {},
+    "duration_min": 40,
+    "duration_max": 50
+  }
+}

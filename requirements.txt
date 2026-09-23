@@ -1,0 +1,11 @@
+# Python 3.12. Install the pinned PyTorch wheel using the README first.
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0
+soundfile==0.14.0
+transformers==4.44.2
+einops==0.8.2
+threadpoolctl==3.6.0
+huggingface-hub==0.36.2
+joblib==1.6.0
+cloudpickle==3.1.2
